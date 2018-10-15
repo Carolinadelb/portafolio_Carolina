@@ -15,6 +15,8 @@
   <!-- Bootstrap -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
   crossorigin="anonymous">
+  <!-- animacion X -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <!-- animate.css -->
   <link rel="stylesheet"
   href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"
@@ -28,7 +30,7 @@
   <div class="backgroundPic">
   <!-- Menú -->
     <nav class="navbar  navbar-expand-lg navbar-light top-navbar" data-toggle="sticky-onscroll">
-      <a class="navbar-brand" href="#">
+      <a class="navbar-brand" href="index.html">
           <img src="src/img/logo_c_circleblack.png" class="logoCaroMenu" alt="Logo Carolina">
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -37,7 +39,10 @@
         <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
           <ul class="navbar-nav pull-right">
               <li class="nav-item">
-                <a class="nav-link active" href="#">Inicio</a>
+                <a class="nav-link active" href="index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#sobreMi">Sobre mí</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#portfolio">Portafolio</a>
@@ -54,11 +59,14 @@
       <div class="row">
         <div class="col">
             <img src="src/img/logo_carolina_black.png" class="logoCarolina" alt="Logo Carolina"> 
-            <h1 class="titleHeader">Diseñadora UX/UI, de Santiago.</h1>
-            <p class="textHeader1">Diseño productos digitales, desde el comienzo de la idea, hasta el diseño final.
-              Siempre pensando en como hacer una mejor experiencia para el usuario.<br class="textHeader2">¡Démosle vida a tu idea!</br></p>
+             <h1 class="titleHeader">Diseñadora UX/UI, de Santiago.</h1>
+             <div class="headerCenter">
+               <p class="textHeader1">Diseño productos digitales, desde el comienzo de la idea, hasta el diseño final.
+                 <br>Siempre pensando en como hacer una mejor experiencia para el usuario.<br class="textHeader2">¡Démosle vida a tu idea!</br>
+               </p>
+             </div>
             <div class="arrowHeader">
-              <a href="#portfolio">
+              <a href="#sobreMi">
                 <i class="fas fa-angle-down animated infinite bounce"></i>
               </a>
             </div>
@@ -69,6 +77,35 @@
     </div><!-- fin container header-->
   </header>
   </div><!-- fin de background -->
+ 
+  <!-- sobre mi -->
+  <div id="sobreMi">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h2 class="titleAbout">Sobre mí</h2>
+        </div><!-- fin col para titulo -->
+      </div>
+      <div class="row">
+        <div class="col-sm">
+          <p class="textAbout">
+              Comencé en el mundo de UX muy tímidamente: mejorando y creando websites sin tener conocimientos, pero con muchas ganas de transformarlas y aprender en el proceso.
+              Me apasiono tanto, que quise darle un giro a mi vida y ahora soy Diseñadora UX/UI.   
+              También soy profesora de inglés, estudiar pedagogía y ejercer, me ayudo a ser más observadora , a empatizar mucho más con las personas y trabajar fuertemente en equipo. Habilidades esenciales para crear/mejorar experiencias de usuarios. 
+              
+              <br>Además me encanta leer, jardinear y ver Netflix. 
+          </p>
+        </div>
+
+        <div class="col-sm">
+         <img src="src/img/sobremi2.JPG" class="myPhoto" alt="Avatar Carolina">
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!-- fin sobre mi -->
+  
 
  <!-- Container Fluid para portafolio -->
  <div id="portfolio">
@@ -78,7 +115,7 @@
         <h2 id="titlePortfolio">Portafolio</h2>
       </div><!-- fin col para titulo -->
     </div><!-- fin row titulos-->
-   <div class="square animated fadeInUp">
+   <div data-aos="fade-up" class="square">
       <div class="row project1 ">
         <div class="col-sm">
           <div class="project">
@@ -100,7 +137,7 @@
         </div><!-- fin col-6 -->
       </div><!-- fin row para proyectos -->
    </div><!-- fin square -->
-   <div class="square animated fadeInUp">
+   <div data-aos="fade-up" class="square">
       <div class="row project1 ">
         <div class="col-sm">
           <div class="project">
@@ -144,7 +181,7 @@
           </div><!-- fin col-6 -->
         </div><!-- fin row para proyectos -->
     </div> 
-    <div class="square animated fadeInUp">
+    <div data-aos="fade-up" class="square">
         <div class="row project1">
             <div class="col-sm">
               <div class="project">
@@ -166,7 +203,8 @@
             </div><!-- fin col-6 -->
           </div><!-- fin row para proyectos -->
       </div> 
-   </div><!-- fin de container-fluid para portafolio -->
+
+    </div><!-- fin de container-fluid para portafolio -->
   </div>
 
 
@@ -186,18 +224,35 @@
          <div class="contact1">
            <h3 class="subtitleContact">¡Trabajemos Juntos!</h3>
            <p>Hablemos sobre nuevas ideas, cambiemos diseños, creemos nuevos conceptos.</p>
-           <p>Escríbeme en: <br> carolinadelgadob@gmail.com</br> </p>
+          
          </div>
-       </div><!-- fin de col contacto -->
-   
-       <div class="col-sm">
-          <div class="contact1">
-           <h3 class="subtitleContact searchMe">Búscame en:</h3>
-           <div class="iconF">  
-            <a href="https://www.linkedin.com/in/carolina-delgado-bravo-a54a9216b/"><i class="fab fa-linkedin"></i></a> 
-            <a href="https://github.com/Carolinadelb"><i class="fab fa-github"></i></a>
-            <a href="https://medium.com/@carolinadelgadob"><i class="fab fa-medium"></i></a>
-          </div>
+         </div>
+         <div class="col-sm">
+          <div class="contact2">
+              <div class="form-group">
+                  <form action="https://formspree.io/carolinadelgadob@gmail.com"
+                      method="POST">
+                      <p>Escríbeme un mensaje:</p>
+                     <div class="form-group">
+                        <label> 
+                          <input type="text" name="name" class="name form-control" placeholder="Escribe tu Nombre">
+                        </label>
+                      </div>
+                      <div class="form-group">
+                        <label>
+                          <input type="email" name="email" class="email form-control" placeholder="Escribe tu mail">
+                       </label>
+                      </div>
+                     <div class="form-group"> 
+                        <label for="exampleFormControlTextarea1">
+                          <textarea name="message" class="message form-control" placeholder="¡Mándame tu mensaje!" rows="4"></textarea>
+                        </label>
+                     </div> 
+                     <div class="form-group">
+                        <button type="submit" class="submit btn btn-primary">Enviar <i class="far fa-paper-plane"></i></button>
+                     </div>
+                  </form>
+               </div>
         </div>
        </div>
      </div><!-- fin de row contacto -->
@@ -205,21 +260,34 @@
   </div>
 
 
+
   <!-- Flechita para arriba  -->
   <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-angle-up"></i></button>
   
 
+
+  
+           
    <!-- Copyright -->
-   <div class="container-fluid">
+   <div class="container-fluid copyright">
       <div class="row">
-        <div class="col copyright">
+          <div class="col-sm iconF">  
+              <a href="https://www.linkedin.com/in/carolina-delgado-bravo-a54a9216b/"><i class="fab fa-linkedin"></i></a> 
+              <a href="https://github.com/Carolinadelb"><i class="fab fa-github"></i></a>
+              <a href="https://medium.com/@carolinadelgadob"><i class="fab fa-medium"></i></a>
+            </div>
+          <div class="col-sm copyText">
           <h5>@Copyright Carolina 2018</h5>
         </div><!-- fin col copyright -->
       </div><!-- fin row copyright -->
-   </div><!-- fin container-fluid copyright -->
+    </div><!-- fin container-fluid copyright -->
 
 
- 
+   <!-- animación -->
+   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+   <script>
+     AOS.init();
+   </script>
   <!--bootstrap  -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>

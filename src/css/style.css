@@ -1,3 +1,6 @@
+body{
+  background-color: #F9F9F9;
+}
 /*LETRAS*/
 /**/
 h1{
@@ -53,8 +56,14 @@ p{
   color: white;
   font-size: 20px;
   padding: 3vh;
-  background-color: rgba(168,168,168,0.5);
+  background-color: transparent;
   border-color: transparent;
+  /*-webkit-box-shadow: 0 8px 6px -6px #999;
+  -moz-box-shadow: 0 8px 6px -6px #999;
+  box-shadow: 0 8px 6px -6px #999;*/
+}
+.navbar.scrolled{
+  background-color: white;
   -webkit-box-shadow: 0 8px 6px -6px #999;
   -moz-box-shadow: 0 8px 6px -6px #999;
   box-shadow: 0 8px 6px -6px #999;
@@ -82,15 +91,16 @@ p{
   background-size: cover;
   background-position: center; 
   width: 100%;
-  border-bottom-left-radius: 50% 20%;
-  border-bottom-right-radius: 50% 20%;
-
+  background-attachment: fixed;
+  border-bottom-left-radius: 50% 8%;
+  border-bottom-right-radius: 50% 8%;
 }
+
 /*logo Carolina*/
 .logoCarolina{
   text-align: center;
   width: 18em;
-  margin-top: 20vh;
+  margin-top: 8vh;
   margin-bottom: 10vh;
 }
 
@@ -101,9 +111,14 @@ p{
 }
 
 /*Párrafo 1*/
+.headerCenter{
+  align-content: center;
+  
+}
 .textHeader1{
   text-align: justify;
   margin-bottom: 6vh;
+  
 }
 
 /*Párrafo 2*/
@@ -116,11 +131,21 @@ p{
 }
 /*Flechita*/
 .fa-angle-down{
-  color: grey;
+  color: #00d1ce;
   font-size: 50px;
 }
 .fa-angle-down:hover {
-  color: #00d1ce; 
+  color: #ef32d9; 
+}
+
+/*SOBRE MÍ*/
+.titleAbout{
+  margin-top: 15vh;
+  margin-bottom: 10vh;
+  text-align: center;
+}
+.textAbout{
+  text-align: justify;
 }
 /*PORTAFOLIO en INICIO*/
 .project1{
@@ -137,12 +162,13 @@ a:hover{
 /*Cuadrados*/
 .square {
   background: #fff;
-  box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.2);
   padding: 25px;
-  border-radius: 25px;
   height: auto;
   margin-bottom: 6%;
  }
+.square:hover{
+  box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.2);
+}
 
 #titlePortfolio{
   margin-top: 15vh;
@@ -215,8 +241,8 @@ img {
 }
 /*botón*/
 .btn-primary{
-  font-family: 'Oswald', sans-serif;
-  font-size: 18px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
   width: 20vh;
   border-radius: 40px;
   letter-spacing: 1px;
@@ -240,17 +266,17 @@ img {
   margin-bottom: 3vh;
   text-align: center;
 }
+.form-control{
+  width: 120%;
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+}
+.message{
+  width: 126%;
+}
 
-.iconF{
-  text-align: center;
-}
-.fab{
-  display: inline-block;
-  font-size: 6vh;
-  color:black;
-}
-.fab:hover{
-  color:#ef32d9;
+.contact2{
+  align-content: initial;
 }
 /*FLECHITA PARA ARRIBA*/
 #myBtn {
@@ -262,26 +288,44 @@ img {
   border: none;
   outline: none;
   background-color: transparent;
-  color: grey; 
+  color: #00d1ce; 
   cursor: pointer;
   font-size: 50px; 
 }
 
 #myBtn:hover {
-  color: #00d1ce; 
+  color: #ef32d9; 
 }
 /*COPYRIGHT*/
-.copyright{
-  bottom: 0;
-  margin-top: 20%;
+.iconF{
+  text-align: center !important;
+  background-color: black;
   width: 100%;
-  height: 10vh;
+  display: inline-block;
+}
+.fab{
+  font-size: 5vh;
+  color: #00d1ce; 
+}
+
+.fab:hover{
+  color:#ef32d9;
+}
+
+.copyright{
+  margin-top: 8%;
+  bottom: 0;
+  width: 100%;
   padding: 3vh;
   background-color: black;
   color: white;
-  text-align: center;
+  text-align: center !important;
+  align-content: center;
 }
-
+.copyText{
+  margin-top: 5%;
+  margin-bottom: 2%;
+}
 /*PLANTILLA*/
 .backgroundPicProject1{
   background-image:linear-gradient(rgba(239, 50, 217, 0.4), rgba(137, 255, 253, 0.45)), url(../../src/img/IF-Blanco-Recoleta_60-copy.jpg);  
@@ -366,7 +410,6 @@ iframe{
   background: #fff;
   box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.2);
   padding: 25px;
-  border-radius: 25px;
   height: auto;
   text-align: center;
 }
@@ -421,6 +464,12 @@ iframe{
     }
   .paragraphProject{
     text-align: justify;
+  }
+  .form-control{
+    width: 170%;
+    }
+  .message{
+    width: 178%;
   }
  
  }
