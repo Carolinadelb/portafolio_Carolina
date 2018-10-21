@@ -1313,7 +1313,7 @@ ul.sub-menu li a {
     width: 100%;
     background-color: #7beec7;
     display: table;
-    text-align: center;
+    text-align: justify;
 }
 .newsletter-left-inner {
     display: table-cell;
