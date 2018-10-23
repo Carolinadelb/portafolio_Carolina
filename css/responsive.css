@@ -1,14 +1,6 @@
 
 @media (min-width: 320px) {
-	.slider-description-inner h1 {
-		font-family: 'Montserrat', sans-serif;
-		font-size: 100px;
-		letter-spacing: 8px;
-	}
-	.slider-description-inner h2 {
-		font-family: 'Oswald', sans-serif;
-		font-size: 20px;
-	}
+
 	
 } 
 /* 1. Small devices (tablets, 768px and Up) */
@@ -99,14 +91,17 @@
 	.slider-description{
 		top: 25%;
 	}
-	.slider-description-inner h1 span {
-	    padding: 10px;
-	    line-height: 32px;
+	.slider-description-inner h2 {
+		font-size: 20px;
 	}
 
 
-	.slider-description-inner h1, .cd-headline{
-		font-size: 20px;
+	.slider-description-inner h1{
+    	font-size: 30px;
+	}
+
+	.cd-headline{
+		font-size: 14px;
 	}
 	.menu-wrap{
 		width: 100%;
@@ -168,9 +163,8 @@
 		display: table;
 		background-color: rgba(255, 255, 255, 0.9);
 	}
-	.newsletter-right-inner form{
-		display: table-cell;
-		vertical-align: middle;
+	.newsletter-left-inner h4{
+		font-size: 14px;	
 	}
 
 	.blog-front-content{

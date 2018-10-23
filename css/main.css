@@ -390,10 +390,7 @@ ul.sublist {
     background-color: #ef32d9;
     
   }
-.btn-PortfolioCV{
-    background-color:#00d1ce;
-    width: 50%;
-}
+
 .btn-1 {
     margin-left: 42%;
     clear: both;
@@ -476,7 +473,7 @@ a:hover>span.site-name{
     letter-spacing: 8px;
 }
 .slider-description-inner h2 {
-    font-family: 'Oswald', sans-serif;
+   
     font-size: 35px;
 }
 .cd-intro {
